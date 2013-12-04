@@ -1,0 +1,80 @@
+
+
+.colors2{
+  height: 300px;
+  width: 400px;
+  margin: 0 auto 140px;
+}
+
+.colors2 div{
+  width: 66%;
+  height:66%;
+  border-radius: 50%;
+  opacity: .4;
+  transition: transform 2s ease-in-out;
+}
+
+.colors2 #g{
+  margin-left: 0%;
+  margin-top: 50%;
+  transform-origin: 0% 50%;
+  
+}
+
+.colors2 #g2{
+  margin-left: 34%;
+  margin-top: -66%;
+  transform-origin: 100% 50%;
+  }
+
+.colors2 #h{
+  margin-top: -37%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+
+
+.colors2.hover #g{
+  animation: open-g2 0.6s 0s infinite alternate ease-in-out;
+  perspective: 100;
+}
+
+.colors2.hover #g2{
+  perspective: 100;
+  animation: open-g22 0.6s 1s infinite alternate ease-in-out;
+}
+
+.colors2.hover #h{
+  animation: open-h2 0.8s .0s infinite alternate ease-in-out;
+  perspective: 100;
+}
+
+
+
+@keyframes open-g2{
+  from{
+    transform: rotateX(0deg) rotateY(0deg) translateX(0%) translateY(0%);
+  }
+  to{
+    transform: rotateX(66deg) rotateY(-66deg) translateX(-66%) translateY(-33%);
+  }
+}
+@keyframes open-g22{
+  from{   transform: rotateX(0deg) rotateY(0deg) translateX(0%) translateY(0%);
+  }
+  to{
+      transform:   rotateX(66deg) rotateY(66deg) translateX(66%) translateY(-33%);
+
+  }
+}
+@keyframes open-h2{
+  from{   transform: rotateX(0deg) rotateY(0deg) translateX(0%) translateY(0%);
+  }
+  to{
+    transform: rotateX(80deg) rotateY(0deg) translateX(0%) translateY(66%);
+
+  }
+}
